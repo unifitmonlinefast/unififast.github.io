@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unifi Broadband Promotions</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --unifi-orange: #ff5722;
+            --unifi-blue: #0056b3;
+            --unifi-light: #f8f9fa;
+        }
+        body {
+            background-color: #f4f7f6;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .navbar, .footer {
+            background-color: var(--unifi-blue);
+        }
+        .text-orange {
+            color: var(--unifi-orange) !important;
+        }
+        .bg-orange {
+            background-color: var(--unifi-orange) !important;
+            color: white;
+        }
+        .hero-section {
+            background: linear-gradient(135deg, var(--unifi-blue) 0%, #00a2ff 100%);
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+        }
+        .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+            background-color: var(--unifi-orange);
+        }
+        .nav-pills .nav-link {
+            color: var(--unifi-blue);
+            font-weight: bold;
+        }
+        .card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            height: 100%;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .price-tag {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--unifi-orange);
+        }
+        .speed-title {
+            font-size: 1.8rem;
+            font-weight: 900;
+            color: var(--unifi-blue);
+        }
+        .add-on-box {
+            background-color: #ffe8e0;
+            border-left: 4px solid var(--unifi-orange);
+            padding: 10px;
+            margin-top: 15px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-dark shadow-sm">
+        <div class="container">
+            <span class="navbar-brand mb-0 h1 fs-2 fw-bold">
+                <span class="text-orange">unifi</span> Promotions
+            </span>
+        </div>
+    </nav>
+
+    <div class="hero-section shadow-sm">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Jom Pasang Unifi Sekarang!</h1>
+            <p class="lead">Internet Pantas • Stabil • Berbaloi • Coverage Luas</p>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <div class="text-center mb-4">
+            <h2 class="fw-bold text-dark">Choose Your Best Plan</h2>
+            <p class="text-muted">Select a promotional campaign below to view available packages.</p>
+        </div>
+
+        <ul class="nav nav-pills justify-content-center mb-4" id="promoTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active mx-2" id="promo1-tab" data-bs-toggle="pill" data-bs-target="#promo1" type="button" role="tab">6 Bulan Percuma</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link mx-2" id="promo2-tab" data-bs-toggle="pill" data-bs-target="#promo2" type="button" role="tab">Unifi Prime (3 Bulan Percuma)</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link mx-2" id="promo3-tab" data-bs-toggle="pill" data-bs-target="#promo3" type="button" role="tab">Smart Device Bundles</button>
+            </li>
+        </ul>
+
+        <div class="tab-content" id="promoTabsContent">
+            
+            <div class="tab-pane fade show active fade-in" id="promo1" role="tabpanel">
+                <div class="alert alert-info text-center fw-bold">
+                    Tawaran Terhad! Percuma Pemasangan Standard & Router WiFi 6
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-4">
+                        <div class="card text-center p-4 border-top border-4 border-primary">
+                            <h3 class="speed-title">100Mbps</h3>
+                            <div class="text-decoration-line-through text-muted">RM99</div>
+                            <div class="price-tag">RM89<span class="fs-5 text-dark">/mth</span></div>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li><strong class="text-orange">6 Bulan Bil Percuma</strong></li>
+                                <li>Kontrak 36 bulan</li>
+                            </ul>
+                            <button class="btn btn-outline-primary mt-auto w-100 signup-btn">Sign Up Now</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card text-center p-4 border-top border-4 border-primary">
+                            <h3 class="speed-title">300Mbps</h3>
+                            <div class="text-decoration-line-through text-muted">RM139</div>
+                            <div class="price-tag">RM129<span class="fs-5 text-dark">/mth</span></div>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li><strong class="text-orange">6 Bulan Bil Percuma</strong></li>
+                                <li>Kontrak 30 bulan</li>
+                            </ul>
+                            <button class="btn btn-outline-primary mt-auto w-100 signup-btn">Sign Up Now</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card text-center p-4 border-top border-4 border-primary">
+                            <h3 class="speed-title">500Mbps</h3>
+                            <div class="text-decoration-line-through text-muted">RM159</div>
+                            <div class="price-tag">RM149<span class="fs-5 text-dark">/mth</span></div>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li><strong class="text-orange">6 Bulan Bil Percuma</strong></li>
+                                <li>Kontrak 30 bulan</li>
+                            </ul>
+                            <button class="btn btn-outline-primary mt-auto w-100 signup-btn">Sign Up Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="promo2" role="tabpanel">
+                <div class="alert bg-orange text-center fw-bold">
+                    Shorter 24 Months Contract + Unlimited Data!
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-4">
+                        <div class="card text-center p-4">
+                            <h3 class="speed-title">100Mbps</h3>
+                            <div class="price-tag">@RM89</div>
+                            <ul class="list-unstyled mt-3 mb-4 text-start ms-4">
+                                <li>✓ Unlimited Data</li>
+                                <li>✓ Certified Wi-Fi 6 Router</li>
+                                <li>✓ <strong>24 Months Contract</strong></li>
+                                <li>✓ Up to 4-6 Users</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card text-center p-4 border border-warning border-2 position-relative">
+                            <span class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-warning text-dark">
+                                🔥 RECOMMENDED 🔥
+                            </span>
+                            <h3 class="speed-title mt-2">300Mbps</h3>
+                            <div class="price-tag">@RM129</div>
+                            <ul class="list-unstyled mt-3 mb-4 text-start ms-4">
+                                <li>✓ Unlimited Data</li>
+                                <li>✓ Certified Wi-Fi 6 Router</li>
+                                <li>✓ <strong>24 Months Contract</strong></li>
+                                <li>✓ Up to 4-10 Users</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card text-center p-4">
+                            <h3 class="speed-title">500Mbps</h3>
+                            <div class="price-tag">@RM149</div>
+                            <ul class="list-unstyled mt-3 mb-4 text-start ms-4">
+                                <li>✓ Unlimited Data</li>
+                                <li>✓ Certified Wi-Fi 6 Router</li>
+                                <li>✓ <strong>24 Months Contract</strong></li>
+                                <li>✓ Up to 4-20 Users</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-12">
+                        <div class="card bg-light p-3">
+                            <h5 class="fw-bold text-blue mb-3">Optional Add-ons:</h5>
+                            <div class="d-flex justify-content-around flex-wrap">
+                                <div><strong>📱 Unifi Mobile 5G:</strong> RM39 (30GB data) | RM69 (Unlimited 5G)</div>
+                                <div><strong>📡 Mesh WiFi:</strong> @ RM15/month</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="promo3" role="tabpanel">
+                <div class="alert alert-dark text-center fw-bold">
+                    Premium Value with Smart Devices (36 Months Contract)
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card p-4">
+                            <h3 class="speed-title text-center">100Mbps</h3>
+                            <div class="text-center text-muted mb-2">Premium Value</div>
+                            <div class="price-tag text-center">RM89<span class="fs-6 text-dark">/bulan</span></div>
+                            <div class="add-on-box mt-auto">
+                                <strong>🎁 6 Months Waiver Bill</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card p-4">
+                            <h3 class="speed-title text-center">300Mbps</h3>
+                            <div class="text-center text-muted mb-2">Premium Value + Device</div>
+                            <div class="price-tag text-center">RM129<span class="fs-6 text-dark">/bulan</span></div>
+                            <div class="add-on-box mt-auto">
+                                <strong>+ RM10/mth</strong><br> Add on Smart TV 43"
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card p-4">
+                            <h3 class="speed-title text-center">500Mbps</h3>
+                            <div class="text-center text-muted mb-2">Premium Value + Device</div>
+                            <div class="price-tag text-center">RM149<span class="fs-6 text-dark">/bulan</span></div>
+                            <div class="add-on-box mt-auto">
+                                <strong>+ RM10/mth</strong>: Add on TV 55" / iPad 11" 128GB<br>
+                                <strong>+ RM20/mth</strong>: Add on TV 65"
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card p-4">
+                            <h3 class="speed-title text-center">1Gbps</h3>
+                            <div class="text-center text-muted mb-2">Premium Value + Device</div>
+                            <div class="price-tag text-center">RM249<span class="fs-6 text-dark">/bulan</span></div>
+                            <div class="add-on-box mt-auto">
+                                <strong>+ RM10/mth</strong>: Add on TV 65"<br>
+                                <strong>+ RM20/mth</strong>: Add on TV 75"
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="footer text-white text-center py-3 mt-5">
+        <p class="mb-0">© 2026 Unifi Promotions Mockup. *Tertakluk kepada terma dan syarat.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        $(document).ready(function() {
+            // Simple fade effect when switching tabs using jQuery
+            $('button[data-bs-toggle="pill"]').on('show.bs.tab', function (e) {
+                $('.tab-pane').hide().removeClass('show active');
+            });
+            
+            $('button[data-bs-toggle="pill"]').on('shown.bs.tab', function (e) {
+                var targetId = $(e.target).attr('data-bs-target');
+                $(targetId).fadeIn(400).addClass('show active');
+            });
+
+            // Alert for buttons
+            $('.signup-btn').on('click', function() {
+                var planSpeed = $(this).siblings('.speed-title').text();
+                alert("Thank you for your interest in the " + planSpeed + " plan! Redirecting to registration...");
+            });
+        });
+    </script>
+</body>
+</html>
